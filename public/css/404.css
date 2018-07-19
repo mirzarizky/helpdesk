@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    content: '';
+  position: absolute;
+}
+
+body{
+	background: #1e3876;
+	background-image: linear-gradient( 135deg, #1e3876 10%, #003762 100%);
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+.error {
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+	margin-bottom: 0;
+}
+
+.dracula{
+  margin: 0 50%;
+  text-align: center;
+	margin: auto;
+	overflowX: hidden;
+}
+
+.error .p {
+	height: 100%;
+	color: #fff;
+	font-size: 200px;
+	display: inline-block;
+}
+
+
+.con {
+  background: url("/images/character-404p.png");
+  width: 170px;
+  height: 460px;
+  position: relative;
+  margin: 9% auto 0;
+  animation: ani9 0.7s ease-in-out infinite  alternate ;
+}
+
+@keyframes ani9 {
+    0%{
+    transform: translateY(10px);
+  }
+
+  100%{
+    transform: translateY(30px);
+  }
+
+}
+
+
+/* page-ms */
+.page-ms {transform: translateY(-50px);}
+
+.error p.page-msg {
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+button.go-back {
+		font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    z-index: 9;
+    border-radius: 4px;
+    color: #003762;
+	  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .con {
+    background: url("/images/character-404w```/.png");
+    width: 100px;
+    height: 260px;
+    position: relative;
+    margin: 9% auto 0;
+    animation: ani9 0.7s ease-in-out infinite  alternate ;
+  }
+  .error .p {
+    font-size: 100px;
+  }
+}
