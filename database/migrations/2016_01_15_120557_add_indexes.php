@@ -17,7 +17,7 @@ class AddIndexes extends Migration
      */
     public function up()
     {
-        Schema::table('ticketit', function (Blueprint $table) {
+        Schema::table('ticketid', function (Blueprint $table) {
             $table->index('subject');
             $table->index('status_id');
             $table->index('priority_id');
@@ -27,14 +27,22 @@ class AddIndexes extends Migration
             $table->index('completed_at');
         });
 
-        Schema::table('ticketit_comments', function (Blueprint $table) {
+        Schema::table('ticketid_comments', function (Blueprint $table) {
             $table->index('user_id');
             $table->index('ticket_id');
         });
 
-        Schema::table('ticketit_settings', function (Blueprint $table) {
+        Schema::table('ticketid_settings', function (Blueprint $table) {
             $table->index('lang');
             $table->index('slug');
+        });
+
+        Schema::table('ticketid_telegrams', function (Blueprint $table) {
+            $table->index('user_id');
+        });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->index('telegram_id');
         });
     }
 
@@ -45,24 +53,32 @@ class AddIndexes extends Migration
      */
     public function down()
     {
-        Schema::table('ticketit', function (Blueprint $table) {
-            $table->dropIndex('ticketit_subject_index');
-            $table->dropIndex('ticketit_status_id_index');
-            $table->dropIndex('ticketit_priority_id_index');
-            $table->dropIndex('ticketit_user_id_index');
-            $table->dropIndex('ticketit_agent_id_index');
-            $table->dropIndex('ticketit_category_id_index');
-            $table->dropIndex('ticketit_completed_at_index');
+        Schema::table('ticketid', function (Blueprint $table) {
+            $table->dropIndex('ticketid_subject_index');
+            $table->dropIndex('ticketid_status_id_index');
+            $table->dropIndex('ticketid_priority_id_index');
+            $table->dropIndex('ticketid_user_id_index');
+            $table->dropIndex('ticketid_agent_id_index');
+            $table->dropIndex('ticketid_category_id_index');
+            $table->dropIndex('ticketid_completed_at_index');
         });
 
-        Schema::table('ticketit_comments', function (Blueprint $table) {
-            $table->dropIndex('ticketit_comments_user_id_index');
-            $table->dropIndex('ticketit_comments_ticket_id_index');
+        Schema::table('ticketid_comments', function (Blueprint $table) {
+            $table->dropIndex('ticketid_comments_user_id_index');
+            $table->dropIndex('ticketid_comments_ticket_id_index');
         });
 
-        Schema::table('ticketit_settings', function (Blueprint $table) {
-            $table->dropIndex('ticketit_settings_lang_index');
-            $table->dropIndex('ticketit_settings_slug_index');
+        Schema::table('ticketid_settings', function (Blueprint $table) {
+            $table->dropIndex('ticketid_settings_lang_index');
+            $table->dropIndex('ticketid_settings_slug_index');
+        });
+
+        Schema::table('ticketid_telegrams', function (Blueprint $table) {
+            $table->dropIndex('ticketid_telegrams_user_id_index');
+        });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropIndex('users_telegram_id_index');
         });
     }
 }

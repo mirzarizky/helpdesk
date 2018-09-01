@@ -36,6 +36,17 @@
       'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
+  'irazasyed/telegram-bot-sdk' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Telegram\\Bot\\Laravel\\TelegramServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Telegram' => 'Telegram\\Bot\\Laravel\\Facades\\Telegram',
+    ),
+  ),
   'jenssegers/date' => 
   array (
     'providers' => 
@@ -52,6 +63,13 @@
     'providers' => 
     array (
       0 => 'Larapack\\VoyagerHooks\\VoyagerHooksServiceProvider',
+    ),
+  ),
+  'laravel-notification-channels/telegram' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'NotificationChannels\\Telegram\\TelegramServiceProvider',
     ),
   ),
   'laravel/scout' => 

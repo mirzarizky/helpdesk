@@ -151,10 +151,11 @@ return [
         /*
          * Package Service Providers...
          */
-         Kordy\Ticketit\TicketitServiceProvider::class,
+         Mirzarizky\Ticketid\TicketidServiceProvider::class,
          DevDojo\Chatter\ChatterServiceProvider::class,
          Weblee\Mandrill\MandrillServiceProvider::class,
          TeamTNT\Scout\TNTSearchScoutServiceProvider::class,
+         Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         /*
          * Application Service Providers...
          */

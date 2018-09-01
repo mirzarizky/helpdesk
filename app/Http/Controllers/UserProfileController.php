@@ -35,7 +35,7 @@ class UserProfileController extends Controller
      */
      public function index()
      {
-         $ticket_count = DB::table('ticketit')->where('user_id',Auth::id())->count();;
+         $ticket_count = DB::table('ticketid')->where('user_id',Auth::id())->count();;
          $forum_comment_count     = DB::table('chatter_post')->where('user_id',Auth::id())->count();;
          $forum_discussion_count  = DB::table('chatter_discussion')->where('user_id',Auth::id())->count();;
          return view('users.dashboard', [

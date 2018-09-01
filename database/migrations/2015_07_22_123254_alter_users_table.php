@@ -13,8 +13,9 @@ class AlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('ticketit_admin')->default(0);
-            $table->boolean('ticketit_agent')->default(0);
+            $table->boolean('ticketid_admin')->default(0);
+            $table->boolean('ticketid_agent')->default(0);
+            $table->integer('telegram_id')->unsigned()->nullable()->default(null);
         });
     }
 
@@ -26,7 +27,7 @@ class AlterUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['ticketit_admin', 'ticketit_agent']);
+            $table->dropColumn(['ticketid_admin', 'ticketid_agent', 'telegram_id']);
         });
     }
 }

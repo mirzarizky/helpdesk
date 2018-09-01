@@ -37,4 +37,7 @@ return [
     'mandrill' => [
 		    'secret' => env('MANDRILL_KEY'),
 	  ],
+    'telegram-bot-api' => [
+        'token' => env('TELEGRAM_BOT_TOKEN', null)
+    ],
 ];

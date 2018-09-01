@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdc1d3935e7b24b8d65b33d07ad7fdab",
+    "content-hash": "6c4cc84f2fde36cd7abced9b6dacc7be",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -117,6 +117,183 @@
                 "widgets"
             ],
             "time": "2018-04-15T19:59:08+00:00"
+        },
+        {
+            "name": "bugsnag/bugsnag",
+            "version": "v3.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-php.git",
+                "reference": "94474e309cebec88915fa9d4cf1e5355458f35aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/94474e309cebec88915fa9d4cf1e5355458f35aa",
+                "reference": "94474e309cebec88915fa9d4cf1e5355458f35aa",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0",
+                "guzzlehttp/guzzle": "^5.0|^6.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "graham-campbell/testbench-core": "^1.1",
+                "mockery/mockery": "^0.9.4|^1.0",
+                "mtdowling/burgomaster": "dev-master#72151eddf5f0cf101502b94bf5031f9c53501a04",
+                "php-mock/php-mock-phpunit": "^1.1",
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugsnag\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com",
+                    "homepage": "https://bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for PHP applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-php",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "logging",
+                "tracking"
+            ],
+            "time": "2018-07-20T14:35:34+00:00"
+        },
+        {
+            "name": "bugsnag/bugsnag-laravel",
+            "version": "v2.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-laravel.git",
+                "reference": "d8ceffe7101c3931de46f8c60df8a97d2a3bfc3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-laravel/zipball/d8ceffe7101c3931de46f8c60df8a97d2a3bfc3a",
+                "reference": "d8ceffe7101c3931de46f8c60df8a97d2a3bfc3a",
+                "shasum": ""
+            },
+            "require": {
+                "bugsnag/bugsnag": "^3.12",
+                "bugsnag/bugsnag-psr-logger": "^1.4",
+                "illuminate/contracts": "^5.0",
+                "illuminate/support": "^5.0",
+                "monolog/monolog": "^1.12",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^3.1|^4.0|^5.0",
+                "mockery/mockery": "^0.9.4|^1.0",
+                "phpunit/phpunit": "^4.8|^5.0|^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugsnag\\BugsnagLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for Laravel applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-laravel",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "laravel",
+                "logging",
+                "tracking"
+            ],
+            "time": "2018-03-07T15:40:07+00:00"
+        },
+        {
+            "name": "bugsnag/bugsnag-psr-logger",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-psr-logger.git",
+                "reference": "a9bed75b830cd1a702c888fdbb1e8b2b46af1ac0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-psr-logger/zipball/a9bed75b830cd1a702c888fdbb1e8b2b46af1ac0",
+                "reference": "a9bed75b830cd1a702c888fdbb1e8b2b46af1ac0",
+                "shasum": ""
+            },
+            "require": {
+                "bugsnag/bugsnag": "^3.10",
+                "php": ">=5.5",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "graham-campbell/testbench-core": "^1.1",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugsnag\\PsrLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com",
+                    "homepage": "https://bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag PHP PSR Logger.",
+            "homepage": "https://github.com/bugsnag/bugsnag-psr",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "logging",
+                "psr",
+                "tracking"
+            ],
+            "time": "2018-02-16T16:51:45+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -1676,6 +1853,77 @@
             "time": "2017-09-21T16:29:17+00:00"
         },
         {
+            "name": "irazasyed/telegram-bot-sdk",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irazasyed/telegram-bot-sdk.git",
+                "reference": "fc452f11a6509616f26e279ad36339e1b9032472"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irazasyed/telegram-bot-sdk/zipball/fc452f11a6509616f26e279ad36339e1b9032472",
+                "reference": "fc452f11a6509616f26e279ad36339e1b9032472",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.1",
+                "guzzlehttp/psr7": "~1.3",
+                "illuminate/support": "~5.1",
+                "league/event": "^2.1",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.1"
+            },
+            "suggest": {
+                "illuminate/container": "Hold dependencies to be injected in commands constructors",
+                "irazasyed/larasupport": "Allows you to use any Laravel Package in Lumen by adding support!"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Telegram\\Bot\\Laravel\\TelegramServiceProvider"
+                    ],
+                    "aliases": {
+                        "Telegram": "Telegram\\Bot\\Laravel\\Facades\\Telegram"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Telegram\\Bot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Syed Irfaq R.",
+                    "email": "syed+gh@lukonet.com",
+                    "homepage": "https://github.com/irazasyed"
+                }
+            ],
+            "description": "The Unofficial Telegram Bot API PHP SDK",
+            "homepage": "https://github.com/irazasyed/telegram-bot-sdk",
+            "keywords": [
+                "laravel",
+                "laravel telegram",
+                "telegram",
+                "telegram bot",
+                "telegram bot api",
+                "telegram php",
+                "telegram sdk"
+            ],
+            "time": "2018-01-19T13:51:25+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -1894,58 +2142,6 @@
             "time": "2018-02-14T22:26:30+00:00"
         },
         {
-            "name": "kordy/ticketit",
-            "version": "v0.3.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thekordy/ticketit.git",
-                "reference": "d29394cf7e5338e3f6f80422956569797128c314"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thekordy/ticketit/zipball/d29394cf7e5338e3f6f80422956569797128c314",
-                "reference": "d29394cf7e5338e3f6f80422956569797128c314",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/dbal": "^2.5|^2.6",
-                "illuminate/support": "^5.1",
-                "jenssegers/date": "^3.0",
-                "laravel/framework": "^5.1",
-                "laravelcollective/html": "^5.1",
-                "mews/purifier": "^2.0",
-                "yajra/laravel-datatables-oracle": "^6.0|^8.0"
-            },
-            "type": "laravel-package",
-            "autoload": {
-                "psr-4": {
-                    "Kordy\\Ticketit\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ahmed Kordy",
-                    "email": "ahmed@kordy.info"
-                },
-                {
-                    "name": "Balázs Kovács",
-                    "email": "balping314@gmail.com"
-                }
-            ],
-            "description": "A simple helpdesk tickets system for Laravel 5.1, 5.2, 5.3, 5.4, 5.5 and 5.6 which integrates smoothly with Laravel default users and auth system",
-            "keywords": [
-                "helpdesk",
-                "laravel",
-                "support",
-                "ticket"
-            ],
-            "time": "2018-05-14T16:04:42+00:00"
-        },
-        {
             "name": "larapack/doctrine-support",
             "version": "v0.1.6",
             "source": {
@@ -2086,6 +2282,67 @@
                 "voyager"
             ],
             "time": "2018-04-18T05:37:25+00:00"
+        },
+        {
+            "name": "laravel-notification-channels/telegram",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-notification-channels/telegram.git",
+                "reference": "165f9b92a4224a3c7e0883dbd42f532d795ab31d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-notification-channels/telegram/zipball/165f9b92a4224a3c7e0883dbd42f532d795ab31d",
+                "reference": "165f9b92a4224a3c7e0883dbd42f532d795ab31d",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "illuminate/notifications": "5.3.* || 5.4.* || 5.5.* || 5.6.*",
+                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "orchestra/testbench": "3.4.x-dev",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NotificationChannels\\Telegram\\TelegramServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NotificationChannels\\Telegram\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Syed Irfaq R.",
+                    "email": "syed@lukonet.com",
+                    "homepage": "https://lukonet.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Telegram Notifications Driver",
+            "homepage": "https://github.com/laravel-notification-channels/telegram",
+            "keywords": [
+                "laravel",
+                "notification",
+                "telegram",
+                "telegram notification",
+                "telegram notifications channel"
+            ],
+            "time": "2018-02-08T18:09:00+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2492,6 +2749,56 @@
             "time": "2018-03-29T14:35:19+00:00"
         },
         {
+            "name": "league/event",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/event.git",
+                "reference": "e4bfc88dbcb60c8d8a2939a71f9813e141bbe4cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/event/zipball/e4bfc88dbcb60c8d8a2939a71f9813e141bbe4cd",
+                "reference": "e4bfc88dbcb60c8d8a2939a71f9813e141bbe4cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~1.0.1",
+                "phpspec/phpspec": "~2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Event\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "Event package",
+            "keywords": [
+                "emitter",
+                "event",
+                "listener"
+            ],
+            "time": "2015-05-21T12:24:47+00:00"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.45",
             "source": {
@@ -2794,6 +3101,56 @@
                 "xss"
             ],
             "time": "2018-03-21T12:29:49+00:00"
+        },
+        {
+            "name": "mirzarizky/ticketid",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/mirzarizky/ticketid.git",
+                "reference": "d9d819693803ef3a25a11fc3f01e078f84a99e0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/mirzarizky%2Fticketid/repository/archive.zip?sha=d9d819693803ef3a25a11fc3f01e078f84a99e0b",
+                "reference": "d9d819693803ef3a25a11fc3f01e078f84a99e0b",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.5|^2.6",
+                "illuminate/support": "^5.1",
+                "irazasyed/telegram-bot-sdk": "3.0",
+                "jenssegers/date": "^3.0",
+                "laravel-notification-channels/telegram": "0.0.4",
+                "laravel/framework": "^5.1",
+                "laravelcollective/html": "^5.1",
+                "mews/purifier": "^2.0",
+                "yajra/laravel-datatables-oracle": "^6.0|^8.0"
+            },
+            "type": "laravel-package",
+            "autoload": {
+                "psr-4": {
+                    "Mirzarizky\\Ticketid\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mirza Rizky",
+                    "email": "hello@mirzarizky.com"
+                }
+            ],
+            "description": "A simple helpdesk tickets system for Laravel 5.1, 5.2, 5.3, 5.4, 5.5 and 5.6 which integrates smoothly with Laravel default users and auth system",
+            "keywords": [
+                "helpdesk",
+                "laravel",
+                "support",
+                "ticket"
+            ],
+            "time": "2018-08-31T16:39:23+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5231,6 +5588,58 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "kordy/ticketit",
+            "version": "v0.3.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thekordy/ticketit.git",
+                "reference": "d29394cf7e5338e3f6f80422956569797128c314"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thekordy/ticketit/zipball/d29394cf7e5338e3f6f80422956569797128c314",
+                "reference": "d29394cf7e5338e3f6f80422956569797128c314",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.5|^2.6",
+                "illuminate/support": "^5.1",
+                "jenssegers/date": "^3.0",
+                "laravel/framework": "^5.1",
+                "laravelcollective/html": "^5.1",
+                "mews/purifier": "^2.0",
+                "yajra/laravel-datatables-oracle": "^6.0|^8.0"
+            },
+            "type": "laravel-package",
+            "autoload": {
+                "psr-4": {
+                    "Kordy\\Ticketit\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahmed Kordy",
+                    "email": "ahmed@kordy.info"
+                },
+                {
+                    "name": "Balázs Kovács",
+                    "email": "balping314@gmail.com"
+                }
+            ],
+            "description": "A simple helpdesk tickets system for Laravel 5.1, 5.2, 5.3, 5.4, 5.5 and 5.6 which integrates smoothly with Laravel default users and auth system",
+            "keywords": [
+                "helpdesk",
+                "laravel",
+                "support",
+                "ticket"
+            ],
+            "time": "2018-05-14T16:04:42+00:00"
         },
         {
             "name": "mockery/mockery",
